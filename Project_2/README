@@ -1,1 +1,47 @@
+# Project 2: Breast Cancer Detection
 
+This project implements a Machine Learning model to classify breast cancer tumors as either **Malignant** (cancerous) or **Benign** (non-cancerous) using clinical data features.
+
+---
+
+## 📋 Project Overview
+The goal is to use medical data to provide high-accuracy diagnostic predictions. This project covers:
+* **Data Preparation**: Loading the Scikit-Learn Breast Cancer dataset.
+* **Feature Scaling**: Using `StandardScaler` to normalize the data for better model performance.
+* **Classification**: Training a **Logistic Regression** model.
+* **Evaluation**: Measuring performance using Accuracy scores and Confusion Matrices.
+
+---
+
+## 🛠️ Technologies Used
+* **Python 3.x**
+* **Pandas & NumPy**: For data handling.
+* **Matplotlib**: For visualizing the Confusion Matrix.
+* **Scikit-Learn**: For the Machine Learning algorithm and preprocessing.
+
+---
+
+## 🚀 Key Steps & Logic
+
+### 1. Data Understanding
+The dataset contains **569 samples** with **30 different features** (like radius, texture, and perimeter of the tumor). 
+
+### 2. Feature Scaling
+Since medical measurements vary in scale, we use `StandardScaler` to ensure all features have a mean of 0 and a standard deviation of 1. This is crucial for Logistic Regression to converge properly.
+
+### 3. Logistic Regression Model
+The model calculates the probability of a tumor being benign or malignant using the **Sigmoid Function**. If the probability is greater than 0.5, it predicts class 1.
+
+### 4. Model Evaluation
+* **Accuracy**: The model achieved an impressive **98.25% accuracy** on the test data.
+* **Confusion Matrix**: Visualizes True Positives, True Negatives, False Positives, and False Negatives.
+
+
+
+---
+
+## 📂 How to Run
+1. Open Google Colab or a Jupyter Notebook.
+2. Install necessary libraries:
+   ```bash
+   pip install numpy pandas matplotlib scikit-learn
